@@ -42,6 +42,12 @@ public class MainActivityTest {
                         isDisplayed()));
         textView.check(matches(withText("Hello World!")));
 
+        try{
+            Thread.sleep(30000);
+        }catch (Exception e){
+
+        }
+
     }
 
     private static Matcher<View> childAtPosition(
