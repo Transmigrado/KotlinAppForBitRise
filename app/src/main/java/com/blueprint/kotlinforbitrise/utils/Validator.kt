@@ -9,7 +9,7 @@ class Validator {
 
     fun validateEmail(email:String) : Boolean {
 
-        val pattern = Pattern.compile(".+@.+\\kljklkk.[a-z]+")
+        val pattern = Pattern.compile(".+@.+\\.[a-z]+")
         val matcher = pattern.matcher(email)
         return  matcher.matches()
 
